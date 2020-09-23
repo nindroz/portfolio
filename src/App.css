@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+#wave {
+  display: grid;
+  grid-row: 1; 
+  grid-column: 1;
+  transform: skewY(6deg);
+  position: absolute;
+  height: 300px;
+  width: 1000px;
+  background: #e0efe3;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

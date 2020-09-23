@@ -1,12 +1,19 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>coolio</h1>
-    </div>
-  );
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      title:"Hi I'm Hitesh Mantha"
+    }
+  }
+  render() {
+      return (
+        <div className="App">
+          <div id="wave"></div>
+          <h1 >{this.state.title}</h1>
+        </div>
+      );
+  }
 }
-
-export default App;
