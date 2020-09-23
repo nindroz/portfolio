@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: "grid"
 }
 
 .App-logo {
@@ -8,7 +9,7 @@
 }
 
 #wave {
-  display: grid;
+  
   grid-row: 1; 
   grid-column: 1;
   transform: skewY(6deg);

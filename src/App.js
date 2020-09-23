@@ -12,7 +12,7 @@ export default class App extends Component {
       return (
         <div className="App">
           <div id="wave"></div>
-          <h1 >{this.state.title}</h1>
+          <h1 style={{gridRow: 1, gridColumn: 1}}>{this.state.title}</h1>
         </div>
       );
   }
