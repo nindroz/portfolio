@@ -11,8 +11,8 @@ export default class App extends Component {
   render() {
       return (
         <div className="App">
+          <h1 className = "heading">Hi I'm<br/>Hitesh Mantha</h1>
           <div id="wave"></div>
-          <h1 style={{gridRow: 1, gridColumn: 1}}>{this.state.title}</h1>
         </div>
       );
   }
