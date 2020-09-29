@@ -11,8 +11,10 @@ export default class App extends Component {
   render() {
       return (
         <div className="App">
-          <h1 className = "heading">Hi I'm<br/>Hitesh Mantha</h1>
-          <div id="wave"></div>
+            <div class="header">
+              <div class="header-bg"></div>
+              <h1 class="header-text">Hi I'm<br/>Hitesh Mantha</h1>
+          </div>
         </div>
       );
   }
