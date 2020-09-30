@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Project from './Project.js'
 import './App.css'
 
 export default class App extends Component {
@@ -11,12 +12,13 @@ export default class App extends Component {
   render() {
       return (
         <div className="App">
-          <div className="swoosh"></div>
+          {/* <div className="swoosh"></div>
           <h1 class="title">
             <span style={{ color: "white" }}>Hi I'm</span>
             <br/>
             Hitesh Mantha
-          </h1>
+          </h1> */}
+          <Project />
         </div>
       );
   }
