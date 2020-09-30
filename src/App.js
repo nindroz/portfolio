@@ -11,12 +11,12 @@ export default class App extends Component {
   render() {
       return (
         <div className="App">
-          {/* <div class="header">
-            <div class="header-bg"></div>
-            <h1 class="header-text">Hi I'm<br/>Hitesh Mantha</h1>
-          </div> */}
-          <div className="slanted"></div>
-          <h1 class="title">Hi I'm<br/>Hitesh Mantha</h1>
+          <div className="swoosh"></div>
+          <h1 class="title">
+            <span style={{ color: "white" }}>Hi I'm</span>
+            <br/>
+            Hitesh Mantha
+          </h1>
         </div>
       );
   }

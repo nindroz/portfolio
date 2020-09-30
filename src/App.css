@@ -6,7 +6,7 @@
 }
 
 Body {
-  background-color: black !important;
+  background-color: #CF6060;
 }
 /* .header{
   color:#242024;
@@ -30,10 +30,10 @@ Body {
 } */
 
 
-.slanted{
+.swoosh{
   position: absolute;
-  background-color: aqua;
-  width: 50%;
+  background-color: #242024;
+  width: 60%;
   height: 100%;
   transform-origin: -10px -10px;
   transform: skewX(-30deg) scaleX(1.2);
@@ -43,6 +43,8 @@ Body {
 .title{
   position: relative;
   z-index: 1;
-  font-size: 200px;
-  color:green
+  font-size: 130px;
+  color:#CF6060;
+  margin-left: 2%;
+  margin-top: 1%;
 }
