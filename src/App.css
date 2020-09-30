@@ -2,50 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
 .App {
   font-family: 'Nunito', sans-serif;
-  overflow: hidden;
-  
+  display: grid;
 }
 
-/* #wave {
-  border: #282c34 2px solid;
-  transform: skewY(-40deg);
-  height: 3000px;
-  width: 3000px;
-  background: #9f49e6;
-  z-index: 0;
-} */
-
-/* .heading{
-  border: #282c34 2px solid;
-  font-size: 200px;
-  font-weight: 700;
-  margin-left: .5em;
-  margin-top: 1em;
-  z-index:1;
-} */
-
-.header{
+Body {
+  background-color: black !important;
+}
+/* .header{
   color:#242024;
   position: relative;
   height: 2000px;
-  display: block;
   
 }
 
 .header-bg{
   position: absolute;
-  top: 6%;
-  left: 6%;
   width: 100%;
   height: 300%;
   background:#CF6060;
-  /* transform-origin: -80px -80px; */
-  transform: skewY(-60deg);
-  overflow: hidden;
   z-index: -1;
 }
 
 .header-text{
   color:#CF6060;
   font-size: 200px;
+  border: 2px #242024 solid;
+} */
+
+
+.slanted{
+  position: absolute;
+  background-color: aqua;
+  width: 50%;
+  height: 100%;
+  transform-origin: -10px -10px;
+  transform: skewX(-30deg) scaleX(1.2);
+  z-index: 0;
+}
+
+.title{
+  position: relative;
+  z-index: 1;
+  font-size: 200px;
+  color:green
 }
