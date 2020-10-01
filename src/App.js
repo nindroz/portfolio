@@ -18,7 +18,14 @@ export default class App extends Component {
             <br/>
             Hitesh Mantha
           </h1>
-          <Project />
+          <div id = "projects">
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </div>
         </div>
       );
   }

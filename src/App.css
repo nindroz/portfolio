@@ -28,3 +28,10 @@ Body {
   margin-left: 2%;
   margin-top: 1%;
 }
+
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
