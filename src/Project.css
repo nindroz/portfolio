@@ -1,9 +1,12 @@
 .element{
-    padding:.5%;
-    background-color: white;
-    width: 320px;
+    padding:20px;
+    background-color: white ;
+    opacity: .9;
+    width: 400px;
     border-radius: 25px;
-    margin: 2%;
+    margin-left: 3%;
+    margin-top: 2%;
+    z-Index:0;
 }
 
 .element p{

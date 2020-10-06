@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Project from './Project.js'
+import Icons from './Icons.js'
 import './App.css'
 
 export default class App extends Component {
@@ -18,6 +19,7 @@ export default class App extends Component {
             <br/>
             Hitesh Mantha
           </h1>
+          <Icons/>
           <div id = "projects">
             <Project />
             <Project />
@@ -26,6 +28,7 @@ export default class App extends Component {
             <Project />
             <Project />
           </div>
+          
         </div>
       );
   }

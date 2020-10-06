@@ -27,5 +27,6 @@ const githubStyle = {
     height:"50px", 
     width:"50px", 
     marginLeft:"auto", 
-    marginTop:"10px"
+    marginTop:"10px",
+    
 }
