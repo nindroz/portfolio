@@ -14,16 +14,14 @@ export default class Icons extends Component {
 }
 
 const singleIconStyle = {
-    color : "blue",
-    height:"100px", 
-    width:"100px", 
-    verticalAlign:"middle",
-    position: 'relative'
-    
+    color : "#242024",
+    height:"110px", 
+    width:"110px",
+    margin: "50px"
 }
 
 const iconPackStyle = {
-    display : "grid",
-    marginLeft: "90%",
-    zIndex:"7"
+    marginLeft: "89%",
+    zIndex:"7",
+    position:"absolute"
 }
