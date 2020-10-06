@@ -1,8 +1,9 @@
 .element{
-    padding:10px;
+    padding:.5%;
     background-color: white;
-    width: 15%;
+    width: 320px;
     border-radius: 25px;
+    margin: 2%;
 }
 
 .element p{
