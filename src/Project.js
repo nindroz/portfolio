@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FaGithub } from 'react-icons/fa'
-import './Project.css'
+import './styling/Project.css'
 
 export default class Project extends Component {
     render() {

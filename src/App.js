@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Project from './Project.js'
 import Icons from './Icons.js'
-import './App.css'
+import './styling/App.css'
 
 export default class App extends Component {
   constructor(){
@@ -21,7 +21,7 @@ export default class App extends Component {
           </h1>
           <Icons/>
           <div id = "projects">
-            <Project />
+            <Project/>
             <Project />
             <Project />
             <Project />
