@@ -24,3 +24,14 @@
 .underline{
     display: flex;
   }
+
+#ghIcon{
+    height:50px; 
+    width:50px; 
+    margin-left:auto; 
+    margin-top:10px;
+}
+
+#ghIcon:hover{
+    transform: scale(1.1);
+}

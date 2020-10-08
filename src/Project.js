@@ -11,7 +11,7 @@ export default class Project extends Component {
                 <hr style={{border: "solid 1px #242024"}}></hr>
                 <div class="underline">
                 <h2>JAVASCRIPT</h2>
-                < FaGithub style = {githubStyle}/>
+                < FaGithub id = "ghIcon"/>
                 </div>
             </div>
         )
@@ -22,11 +22,3 @@ export default class Project extends Component {
     
 }
 
-
-const githubStyle = {
-    height:"50px", 
-    width:"50px", 
-    marginLeft:"auto", 
-    marginTop:"10px",
-    
-}

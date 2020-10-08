@@ -14,15 +14,3 @@ export default class Icons extends Component {
     }
 }
 
-const singleIconStyle = {
-    color : "#242024",
-    height:"110px", 
-    width:"110px",
-    margin: "50px"
-}
-
-const iconPackStyle = {
-    marginLeft: "89%",
-    zIndex:"7",
-    position:"absolute"
-}
