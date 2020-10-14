@@ -1,38 +1,35 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
 .App {
-  font-family: 'Nunito', sans-serif;
-  display: grid;
+	font-family: "Nunito", sans-serif;
+	display: grid;
 }
 
 Body {
-  background-color: #CF6060;
+	background-color: #cf6060;
 }
 
-
-.swoosh{
-  position: absolute;
-  background-color: #242024;
-  width: 60%;
-  height: 100%;
-  transform-origin: -10px -10px;
-  transform: skewX(-30deg) scaleX(1.2);
-  z-index: -1;
+.swoosh {
+	position: absolute;
+	background-color: #242024;
+	width: 60%;
+	height: 200%;
+	transform-origin: -10px -10px;
+	transform: skewX(-30deg) scaleX(1.2);
+	z-index: -1;
 }
 
-.title{
-  position: relative;
-  z-index: 1;
-  font-size: 130px;
-  color:#CF6060;
-  margin-left: 2%;
-  margin-top: 1%;
+.title {
+	position: relative;
+	z-index: 1;
+	font-size: 130px;
+	color: #cf6060;
+	margin-left: 2%;
+	margin-top: 1%;
 }
 
-#projects{
-  display: flex;
-  flex-wrap: wrap;
-  margin-right:20%;
-  margin-top: -5%;
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 20%;
+	margin-top: -5%;
 }
-
