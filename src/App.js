@@ -27,14 +27,20 @@ export default class App extends Component {
 					<Project />
 					<Project />
 				</div>
-				<h1 className="title2">ABOUT ME</h1>
+				<h1 className="title2">
+					ABOUT <span style={{ color: "white" }}>ME</span>
+				</h1>
 				<p id="block">
-					Hey there, Im hitesh. Im a 15 yr old software developer and
-					cybersecurity enthusiast that loves to make things whether that be
-					digital or physical. I'm also interested in mechanical keyboards and
-					3D printing. Feel free to contact me anywhere to just chat or work
-					with me on a project. For easy access my discord is{" "}
-					<b>Nindroz#3903</b>
+					Hey there &#128075; ,{" "}
+					<span style={{ color: "white" }}>I'm Hitesh</span>. Im a 15 yr old
+					software developer and cybersecurity enthusiast that loves to make
+					things and learn pretty much anything. I'm also interested in
+					mechanical keyboards and looking for other cool hobbies. Feel free to
+					contact me to just chat or work with me on a project. The best way to
+					reach me is on Discord{" "}
+					<b style={{ background: "white", borderRadius: "5px", opacity: 0.9 }}>
+						[Nindroz#3903]
+					</b>
 				</p>
 			</div>
 		);
