@@ -32,15 +32,27 @@ export default class App extends Component {
 				</h1>
 				<p id="block">
 					Hey there &#128075; ,{" "}
-					<span style={{ color: "white" }}>I'm Hitesh</span>. Im a 15 yr old
-					software developer and cybersecurity enthusiast that loves to make
-					things and learn pretty much anything. I'm also interested in
-					mechanical keyboards and looking for other cool hobbies. Feel free to
-					contact me to just chat or work with me on a project. The best way to
-					reach me is on Discord{" "}
-					<b style={{ background: "white", borderRadius: "5px", opacity: 0.9 }}>
+					<span
+						style={{
+							background: "white",
+							borderRadius: "5px",
+							opacity: 0.9,
+							paddingLeft: "5px",
+							paddingRight: "5px",
+						}}
+					>
+						I'm Hitesh
+					</span>
+					. Im a 15 yr old software developer and cybersecurity enthusiast that
+					loves to make things and learn pretty much anything. I'm also
+					interested in mechanical keyboards and looking for other cool hobbies!
+					Feel free to contact me to just chat or work with me on a project. The
+					best way to reach me is on Discord{" "}
+					<span
+						style={{ background: "white", borderRadius: "5px", opacity: 0.9 }}
+					>
 						[Nindroz#3903]
-					</b>
+					</span>
 				</p>
 			</div>
 		);
