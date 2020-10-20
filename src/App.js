@@ -12,12 +12,12 @@ export default class App extends Component {
 	log = () => {
 		console.log("pp");
 	};
+
 	render() {
 		return (
 			<div className="App">
 				<Icons />
 				<ScrollTrigger id="main">
-					<button onClick={() => this.log()}></button>
 					<Link
 						activeClass="active"
 						to="aboutMe"
@@ -25,8 +25,6 @@ export default class App extends Component {
 						smooth={true}
 						offset={100}
 						duration={500}
-						classID="main"
-						hashSpy={true}
 					>
 						Hey
 					</Link>
