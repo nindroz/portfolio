@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import ScrollTrigger from "react-scroll-trigger";
 import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
@@ -8,12 +9,15 @@ export default class App extends Component {
 	constructor() {
 		super();
 	}
-
+	log = () => {
+		console.log("pp");
+	};
 	render() {
 		return (
 			<div className="App">
 				<Icons />
-				<section id="main">
+				<ScrollTrigger id="main">
+					<button onClick={() => this.log()}></button>
 					<Link
 						activeClass="active"
 						to="aboutMe"
@@ -22,6 +26,7 @@ export default class App extends Component {
 						offset={100}
 						duration={500}
 						classID="main"
+						hashSpy={true}
 					>
 						Hey
 					</Link>
@@ -39,8 +44,8 @@ export default class App extends Component {
 						<Project />
 						<Project />
 					</div>
-				</section>
-				<section id="aboutMe">
+				</ScrollTrigger>
+				<ScrollTrigger id="aboutMe" onEnter={() => this.log()}>
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
@@ -68,7 +73,7 @@ export default class App extends Component {
 							[Nindroz#3903]
 						</span>
 					</p>
-				</section>
+				</ScrollTrigger>
 			</div>
 		);
 	}
