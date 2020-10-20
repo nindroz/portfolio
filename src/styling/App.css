@@ -15,7 +15,7 @@ Body {
 	height: 200%;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
-	z-index: -1;
+	z-index: -2;
 }
 
 .title {
@@ -51,4 +51,8 @@ Body {
 	margin-right: 2%;
 	font-size: 35px;
 	margin-top: -6%;
+}
+
+#main:active {
+	border-bottom: white 10px solid;
 }
