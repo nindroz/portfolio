@@ -5,14 +5,80 @@ import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
 
-export default class App extends Component {
-	constructor() {
-		super();
+const gqlQuery = (username) => {
+	return `query {
+	repositoryOwner(login: "${username}") {
+	  ... on ProfileOwner {
+		 pinnedItemsRemaining
+		 itemShowcase {
+			items(first: 6) {
+			  edges {
+				 node {
+					... on Repository {
+					  name
+					  description
+					  url
+					  primaryLanguage {
+						 name
+					  }
+					}
+				 }
+			  }
+			}
+		 }
+	  }
 	}
-	log = () => {
-		console.log("pp");
+ }`;
+};
+
+const dummyProject = {
+	node: {
+		url: "https://google.com",
+		name: "Google",
+		primaryLanguage: {
+			name: "Go",
+		},
+		description: "Google.com",
+	},
+};
+
+const endpoint = async () => {
+	const projects = await fetch("https://api.github.com/graphql", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json",
+			Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
+		},
+		body: JSON.stringify({
+			query: gqlQuery("nindroz"),
+		}),
+	});
+
+	const ret = await projects.json();
+	return {
+		props: {
+			projects:
+				ret.data === undefined
+					? process.env.NODE_ENV === "production"
+						? []
+						: Array.from({ length: 6 }).map(() => dummyProject)
+					: ret.data.repositoryOwner.itemShowcase.items.edges,
+		},
+	};
+};
+
+export default class App extends Component {
+	getProjectInfo = () => {
+		return endpoint().then((ret) => {
+			console.log(ret.props.projects);
+			return ret.props;
+		});
 	};
 
+	oof = () => {
+		return <div>{JSON.stringify(this.getProjectInfo())}</div>;
+	};
 	render() {
 		return (
 			<div className="App">
@@ -35,6 +101,7 @@ export default class App extends Component {
 						Hitesh Mantha
 					</h1>
 					<div id="projects">
+						{this.oof()}
 						<Project />
 						<Project />
 						<Project />
@@ -43,7 +110,7 @@ export default class App extends Component {
 						<Project />
 					</div>
 				</ScrollTrigger>
-				<ScrollTrigger id="aboutMe" onEnter={() => this.log()}>
+				<ScrollTrigger id="aboutMe">
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
