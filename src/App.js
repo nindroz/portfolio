@@ -1,84 +1,30 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import ScrollTrigger from "react-scroll-trigger";
+import { endpoint } from "./gql.js";
 import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
 
-const gqlQuery = (username) => {
-	return `query {
-	repositoryOwner(login: "${username}") {
-	  ... on ProfileOwner {
-		 pinnedItemsRemaining
-		 itemShowcase {
-			items(first: 6) {
-			  edges {
-				 node {
-					... on Repository {
-					  name
-					  description
-					  url
-					  primaryLanguage {
-						 name
-					  }
-					}
-				 }
-			  }
-			}
-		 }
-	  }
-	}
- }`;
-};
-
-const dummyProject = {
-	node: {
-		url: "https://google.com",
-		name: "Google",
-		primaryLanguage: {
-			name: "Go",
-		},
-		description: "Google.com",
-	},
-};
-
-const endpoint = async () => {
-	const projects = await fetch("https://api.github.com/graphql", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-			Accept: "application/json",
-			Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
-		},
-		body: JSON.stringify({
-			query: gqlQuery("nindroz"),
-		}),
-	});
-
-	const ret = await projects.json();
-	return {
-		props: {
-			projects:
-				ret.data === undefined
-					? process.env.NODE_ENV === "production"
-						? []
-						: Array.from({ length: 6 }).map(() => dummyProject)
-					: ret.data.repositoryOwner.itemShowcase.items.edges,
-		},
-	};
-};
-
 export default class App extends Component {
-	getProjectInfo = () => {
-		return endpoint().then((ret) => {
-			console.log(ret.props.projects);
-			return ret.props;
-		});
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+	shitsDum = async () => {
+		return await endpoint();
 	};
+	componentDidMount() {
+		// endpoint().then((ret) => {
+		// 	this.setState({
+		// 		...ret.props,
+		// 	});
+		// 	console.log(this.state);
+		// });
 
-	oof = () => {
-		return <div>{JSON.stringify(this.getProjectInfo())}</div>;
-	};
+		console.log(endpoint());
+		this.setState({});
+	}
 	render() {
 		return (
 			<div className="App">
@@ -101,8 +47,10 @@ export default class App extends Component {
 						Hitesh Mantha
 					</h1>
 					<div id="projects">
-						{this.oof()}
-						<Project />
+						{/* {this.state.map((data, key) => {
+							return <div>{data}</div>;
+						})} */}
+						<Project name={JSON.stringify(this.state.projects)} />
 						<Project />
 						<Project />
 						<Project />
