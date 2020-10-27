@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import ScrollTrigger from "react-scroll-trigger";
 import { endpoint, gqlQuery, dummyProject } from "./gql.js";
@@ -6,59 +6,43 @@ import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
 
-export default class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-	shitsDum = async () => {
-		return await endpoint();
-	};
-	componentDidMount() {
-		// endpoint().then((ret) => {
-		// 	this.setState({
-		// 		...ret.props,
-		// 	});
-		// 	console.log(this.state);
-		// });
+export default function App2() {
+	useEffect(async () => {
+		const projects = await fetch("https://api.github.com/graphql", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+				Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
+			},
+			body: JSON.stringify({
+				query: gqlQuery("nindroz"),
+			}),
+		});
 
-		(async () => {
-			const projects = await fetch("https://api.github.com/graphql", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
-					Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
-				},
-				body: JSON.stringify({
-					query: gqlQuery("nindroz"),
-				}),
-			});
-
-			const ret = await projects.json();
-			console.log({
-				props: {
-					projects:
-						ret.data === undefined
-							? process.env.NODE_ENV === "production"
-								? []
-								: Array.from({ length: 6 }).map(() => dummyProject)
-							: ret.data.repositoryOwner.itemShowcase.items.edges,
-				},
-			});
-			this.setState({
+		const ret = await projects.json();
+		console.log({
+			props: {
 				projects:
 					ret.data === undefined
 						? process.env.NODE_ENV === "production"
 							? []
 							: Array.from({ length: 6 }).map(() => dummyProject)
 						: ret.data.repositoryOwner.itemShowcase.items.edges,
-			});
-			console.log(this.state.projects[0]);
-		})();
-	}
-	render() {
-		return (
+			},
+		});
+		const data = {
+			projects:
+				ret.data === undefined
+					? process.env.NODE_ENV === "production"
+						? []
+						: Array.from({ length: 6 }).map(() => dummyProject)
+					: ret.data.repositoryOwner.itemShowcase.items.edges,
+		};
+	});
+	useState(...data);
+	return (
+		<div>
 			<div className="App">
 				<Icons />
 				<ScrollTrigger id="main">
@@ -82,7 +66,7 @@ export default class App extends Component {
 						{/* {this.state.map((data, key) => {
 							return <div>{data}</div>;
 						})} */}
-						<Project name={JSON.stringify(this.state.projects)} />
+						<Project />
 						<Project />
 						<Project />
 						<Project />
@@ -115,11 +99,11 @@ export default class App extends Component {
 						<span
 							style={{ background: "white", borderRadius: "5px", opacity: 0.9 }}
 						>
-							[Nindroz#3903]
+							Nindroz#3903]
 						</span>
 					</p>
 				</ScrollTrigger>
 			</div>
-		);
-	}
+		</div>
+	);
 }
