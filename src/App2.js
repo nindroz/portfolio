@@ -7,7 +7,9 @@ import Icons from "./Icons.js";
 import "./styling/App.css";
 
 export default function App2() {
-	useEffect(async () => {
+	const [projects, setProjects] = useState({});
+
+	(async () => {
 		const projects = await fetch("https://api.github.com/graphql", {
 			method: "POST",
 			headers: {
@@ -31,16 +33,16 @@ export default function App2() {
 						: ret.data.repositoryOwner.itemShowcase.items.edges,
 			},
 		});
-		const data = {
+		setProjects({
 			projects:
 				ret.data === undefined
 					? process.env.NODE_ENV === "production"
 						? []
 						: Array.from({ length: 6 }).map(() => dummyProject)
 					: ret.data.repositoryOwner.itemShowcase.items.edges,
-		};
-	});
-	useState(...data);
+		});
+	})();
+
 	return (
 		<div>
 			<div className="App">
@@ -66,7 +68,7 @@ export default function App2() {
 						{/* {this.state.map((data, key) => {
 							return <div>{data}</div>;
 						})} */}
-						<Project />
+						<Project name={JSON.stringify(projects.projects)} />
 						<Project />
 						<Project />
 						<Project />
