@@ -2,46 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import ScrollTrigger from "react-scroll-trigger";
 import { endpoint, gqlQuery, dummyProject } from "./gql.js";
+import Async from "react-async";
 import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
 
 export default function App2() {
-	const [projects, setProjects] = useState({});
-
-	(async () => {
-		const projects = await fetch("https://api.github.com/graphql", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				Accept: "application/json",
-				Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
-			},
-			body: JSON.stringify({
-				query: gqlQuery("nindroz"),
-			}),
+	const [info, setInfo] = useState({});
+	useEffect(() => {
+		endpoint().then((data) => {
+			(async () => {
+				setInfo(data);
+			})();
 		});
-
-		const ret = await projects.json();
-		console.log({
-			props: {
-				projects:
-					ret.data === undefined
-						? process.env.NODE_ENV === "production"
-							? []
-							: Array.from({ length: 6 }).map(() => dummyProject)
-						: ret.data.repositoryOwner.itemShowcase.items.edges,
-			},
-		});
-		setProjects({
-			projects:
-				ret.data === undefined
-					? process.env.NODE_ENV === "production"
-						? []
-						: Array.from({ length: 6 }).map(() => dummyProject)
-					: ret.data.repositoryOwner.itemShowcase.items.edges,
-		});
-	})();
+	}, []);
 
 	return (
 		<div>
@@ -65,10 +39,7 @@ export default function App2() {
 						Hitesh Mantha
 					</h1>
 					<div id="projects">
-						{/* {this.state.map((data, key) => {
-							return <div>{data}</div>;
-						})} */}
-						<Project name={JSON.stringify(projects.projects)} />
+						<Project name={JSON.stringify(info.props)} />
 						<Project />
 						<Project />
 						<Project />

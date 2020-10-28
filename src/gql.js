@@ -49,16 +49,6 @@ export async function endpoint() {
 	});
 
 	const ret = await projects.json();
-	// console.log({
-	// 	props: {
-	// 		projects:
-	// 			ret.data === undefined
-	// 				? process.env.NODE_ENV === "production"
-	// 					? []
-	// 					: Array.from({ length: 6 }).map(() => dummyProject)
-	// 				: ret.data.repositoryOwner.itemShowcase.items.edges,
-	// 	},
-	// });
 	return {
 		props: {
 			projects:
