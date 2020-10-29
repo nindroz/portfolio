@@ -42,7 +42,11 @@ export default class App extends Component {
 					</h1>
 					<div id="projects">
 						{Object.values(this.state).map((data, key) => {
-							return <Project name={JSON.stringify(data.node.name)} />;
+							return (
+								<Project
+									name={JSON.stringify(data.node.name).replace(/"/g, "")}
+								/>
+							);
 						})}
 					</div>
 				</ScrollTrigger>
