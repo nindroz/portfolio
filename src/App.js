@@ -41,15 +41,9 @@ export default class App extends Component {
 						Hitesh Mantha
 					</h1>
 					<div id="projects">
-						{/* {this.state.map((data, key) => {
-							return <div>{data}</div>;
-						})} */}
-						<Project name={JSON.stringify(this.state[0])} />
-						<Project />
-						<Project />
-						<Project />
-						<Project />
-						<Project />
+						{Object.values(this.state).map((data, key) => {
+							return <Project name={JSON.stringify(data.node.name)} />;
+						})}
 					</div>
 				</ScrollTrigger>
 				<ScrollTrigger id="aboutMe">
