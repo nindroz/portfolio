@@ -11,51 +11,13 @@ export default class App extends Component {
 		super(props);
 		this.state = {};
 	}
-	shitsDum = async () => {
-		return await endpoint();
-	};
 	componentDidMount() {
-		// endpoint().then((ret) => {
-		// 	this.setState({
-		// 		...ret.props,
-		// 	});
-		// 	console.log(this.state);
-		// });
-
-		(async () => {
-			const projects = await fetch("https://api.github.com/graphql", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-					Accept: "application/json",
-					Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
-				},
-				body: JSON.stringify({
-					query: gqlQuery("nindroz"),
-				}),
-			});
-
-			const ret = await projects.json();
-			console.log({
-				props: {
-					projects:
-						ret.data === undefined
-							? process.env.NODE_ENV === "production"
-								? []
-								: Array.from({ length: 6 }).map(() => dummyProject)
-							: ret.data.repositoryOwner.itemShowcase.items.edges,
-				},
-			});
+		endpoint().then((ret) => {
 			this.setState({
-				projects:
-					ret.data === undefined
-						? process.env.NODE_ENV === "production"
-							? []
-							: Array.from({ length: 6 }).map(() => dummyProject)
-						: ret.data.repositoryOwner.itemShowcase.items.edges,
+				...ret.props.projects,
 			});
-			console.log(this.state.projects[0]);
-		})();
+			console.log(this.state);
+		});
 	}
 	render() {
 		return (
@@ -82,7 +44,7 @@ export default class App extends Component {
 						{/* {this.state.map((data, key) => {
 							return <div>{data}</div>;
 						})} */}
-						<Project name={JSON.stringify(this.state.projects)} />
+						<Project name={JSON.stringify(this.state[0])} />
 						<Project />
 						<Project />
 						<Project />

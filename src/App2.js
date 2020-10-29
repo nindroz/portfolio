@@ -8,15 +8,14 @@ import Icons from "./Icons.js";
 import "./styling/App.css";
 
 export default function App2() {
-	const [info, setInfo] = useState({});
+	const [info, setInfo] = useState();
 	useEffect(() => {
-		endpoint().then((data) => {
-			(async () => {
-				setInfo(data);
-			})();
-		});
+		(async () => {
+			const data = await endpoint();
+			setInfo(data);
+			console.log(info);
+		})();
 	}, []);
-
 	return (
 		<div>
 			<div className="App">
