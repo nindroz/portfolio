@@ -1,37 +1,42 @@
-.element{
-    padding:20px;
-    background-color: white ;
-    opacity: .9;
-    width: 400px;
-    border-radius: 25px;
-    margin-left: 3%;
-    margin-top: 2%;
-    z-Index:0;
+.element {
+	padding: 20px;
+	background-color: white;
+	opacity: 0.9;
+	width: 400px;
+	border-radius: 25px;
+	margin-left: 3%;
+	margin-top: 2%;
+	z-index: 0;
 }
 
-.element p{
-    margin-top:-13px;
-    font-size:18px
+.element p {
+	margin-top: -13px;
+	font-size: 18px;
 }
 
-.element h1{
-    margin-top:0;
-    margin-bottom: 0px;
-    font-size: 50px;
-    
+.element h1 {
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: 50px;
 }
 
-.underline{
-    display: flex;
-  }
-
-#ghIcon{
-    height:50px; 
-    width:50px; 
-    margin-left:auto; 
-    margin-top:10px;
+.underline {
+	display: flex;
 }
 
-#ghIcon:hover{
-    transform: scale(1.1);
+.element h2 {
+	font-weight: 700 !important;
+	font-size: 35px;
+	margin: 5px;
+}
+
+#ghIcon {
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+#ghIcon:hover {
+	transform: scale(1.1);
 }
