@@ -11,7 +11,7 @@ Body {
 .swoosh {
 	position: absolute;
 	background-color: #242024;
-	width: 58%;
+	width: 65%;
 	height: 200%;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);

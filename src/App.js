@@ -54,10 +54,15 @@ export default class App extends Component {
 					</div>
 				</div>
 				<div data-scroll-container>
+					<img
+						src="./ltest.png"
+						alt=""
+						style={{ index: "30", marginRight: "70%", width: "500px" }}
+					/>
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
-					<p id="block" style={{ marginBottom: "-200px" }}>
+					<p id="block">
 						Hey there &#128075; , I'm{" "}
 						<span
 							style={{
