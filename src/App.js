@@ -30,7 +30,7 @@ export default class App extends Component {
 		return (
 			<div className="App" data-scroll-container>
 				<div className="swoosh"></div>
-				<div data-scroll-section>
+				<div data-scroll-container>
 					<Icons />
 					<h1 className="title">
 						<span style={{ color: "white" }}>Hi I'm</span>
@@ -53,11 +53,11 @@ export default class App extends Component {
 						})}
 					</div>
 				</div>
-				<div data-scroll-section>
+				<div data-scroll-container>
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
-					<p id="block">
+					<p id="block" style={{ marginBottom: "-200px" }}>
 						Hey there &#128075; , I'm{" "}
 						<span
 							style={{
