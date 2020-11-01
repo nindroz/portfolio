@@ -47,6 +47,7 @@ export default class App extends Component {
 										/"/g,
 										""
 									)}
+									url={JSON.stringify(data.node.url).replace(/"/g, "")}
 								/>
 							);
 						})}
@@ -57,7 +58,7 @@ export default class App extends Component {
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
 					<p id="block">
-						Hey there &#128075; ,{" "}
+						Hey there &#128075; , I'm{" "}
 						<span
 							style={{
 								background: "white",
@@ -67,7 +68,7 @@ export default class App extends Component {
 								paddingRight: "5px",
 							}}
 						>
-							I'm Hitesh
+							Hitesh
 						</span>
 						. Im a 15 yr old software developer and cybersecurity enthusiast
 						that loves to make things and learn pretty much anything. I'm also

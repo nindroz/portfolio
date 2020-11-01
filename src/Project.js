@@ -8,10 +8,18 @@ export default class Project extends Component {
 			<div className="element">
 				<h1>{this.props.name}</h1>
 				<p>{this.props.desc}</p>
-				<hr style={{ border: "solid 1px #242024" }}></hr>
+				<hr
+					style={{ border: "solid 1.5px #242024", background: "#242024" }}
+				></hr>
 				<div className="underline">
 					<h2>{this.props.lang}</h2>
-					<FaGithub id="ghIcon" />
+
+					<FaGithub
+						id="ghIcon"
+						onClick={() => {
+							window.open(`${this.props.url}`);
+						}}
+					/>
 				</div>
 			</div>
 		);
