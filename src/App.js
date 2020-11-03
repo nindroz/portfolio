@@ -6,6 +6,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
+import logo from "./Assets/logot.svg";
+import circ from "./Assets/circ.svg";
 
 export default class App extends Component {
 	constructor(props) {
@@ -55,9 +57,15 @@ export default class App extends Component {
 				</div>
 				<div data-scroll-container>
 					<img
-						src="./ltest.png"
+						src={circ}
 						alt=""
-						style={{ index: "30", marginRight: "70%", width: "500px" }}
+						style={{
+							index: "30",
+							width: "500px",
+							position: "absolute",
+							marginLeft: "5%",
+							marginTop: "150px",
+						}}
 					/>
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
