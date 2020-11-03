@@ -1,16 +1,22 @@
-.icon{
-    color : #242024;
-    height:110px; 
-    width:110px;
-    margin:50px
+.icon {
+	color: #242024;
+	height: 110px;
+	width: 110px;
+	margin: 50px;
 }
 
-.iconPack{
-    margin-left: 89%;
-    z-index:7;
-    position:absolute;
+.iconPack {
+	margin-left: 89%;
+	z-index: 7;
+	position: absolute;
 }
 
-.icon:hover{
-    transform: scale(1.1);
+.icon:hover {
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1200px) {
+	.iconPack {
+		margin-left: 80;
+	}
 }

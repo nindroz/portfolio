@@ -40,3 +40,35 @@
 #ghIcon:hover {
 	transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1200px) {
+	.element {
+		width: 400px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.element p {
+		margin-top: -3px;
+		font-size: 15px;
+	}
+
+	.element h1 {
+		margin-top: 0;
+		margin-bottom: 0px;
+		font-size: 20px;
+	}
+
+	.element h2 {
+		font-weight: 700 !important;
+		font-size: 20px;
+		margin: 5px;
+	}
+
+	#ghIcon {
+		height: 30px;
+		width: 30px;
+		margin-left: auto;
+		margin-top: 10px;
+	}
+}

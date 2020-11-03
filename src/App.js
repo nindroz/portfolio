@@ -56,17 +56,7 @@ export default class App extends Component {
 					</div>
 				</div>
 				<div data-scroll-container>
-					<img
-						src={circ}
-						alt=""
-						style={{
-							index: "30",
-							width: "500px",
-							position: "absolute",
-							marginLeft: "5%",
-							marginTop: "150px",
-						}}
-					/>
+					<img src={circ} alt="" />
 					<h1 className="title2">
 						ABOUT <span style={{ color: "white" }}>ME</span>
 					</h1>
@@ -87,7 +77,7 @@ export default class App extends Component {
 						that loves to make things and learn pretty much anything. I'm also
 						interested in mechanical keyboards and looking for other cool
 						hobbies! Feel free to contact me to just chat or work with me on a
-						project. The best way to reach me is on Discord @{" "}
+						project. The best way to find me is on Discord @{" "}
 						<span
 							style={{
 								background: "white",
