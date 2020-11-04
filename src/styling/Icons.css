@@ -15,8 +15,21 @@
 	transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
 	.iconPack {
 		margin-left: 80;
+		position: fixed;
+		margin-left: 2%;
+		margin-top: 2100px;
+		width: 50px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.iconPack {
+		position: fixed;
+		margin-left: 2%;
+		margin-top: 2100px;
+		width: 50px;
 	}
 }
