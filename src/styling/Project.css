@@ -43,22 +43,11 @@
 
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
-	Body {
-		background-color: blue;
-	}
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
-	Body {
-		background-color: olive;
-	}
-
-	img {
-		visibility: hidden;
-	}
-
-	.title2 {
-		font-size: 100px;
+	.element {
+		width: 1100px;
 	}
 }
