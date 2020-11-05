@@ -11,8 +11,8 @@ Body {
 .swoosh {
 	position: absolute;
 	background-color: #242024;
-	width: 1300px;
-	height: 200%;
+	width: 1400px;
+	height: 4000px;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
 	z-index: -2;
@@ -76,6 +76,14 @@ img {
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
 	Body {
 		background-color: olive;
+	}
+
+	img {
+		visibility: hidden;
+	}
+
+	.title2 {
+		font-size: 100px;
 	}
 }
 /* scroll stuff */
