@@ -45,7 +45,8 @@
 @media only screen and (max-width: 600px) {
 	.element {
 		width: 300px;
-		margin-right: 15px;
+		margin-right: 20px;
+		margin-left: 0px;
 		margin-top: 20px;
 	}
 }
