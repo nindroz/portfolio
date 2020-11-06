@@ -2,7 +2,6 @@
 .App {
 	font-family: "Nunito", sans-serif;
 	display: grid;
-	overflow-x: hidden;
 }
 
 Body {
