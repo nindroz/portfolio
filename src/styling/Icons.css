@@ -15,21 +15,18 @@
 	transform: scale(1.1);
 }
 
-/* @media only screen and (max-width: 768px) {
-	.iconPack {
-		margin-left: 80;
-		position: fixed;
-		margin-left: 2%;
-		margin-top: 2100px;
-		width: 50px;
-	}
+@media only screen and (max-width: 600px) {
 }
 
-@media only screen and (max-width: 1200px) {
-	.iconPack {
-		position: fixed;
-		margin-left: 2%;
-		margin-top: 2100px;
-		width: 50px;
+/* On screens that are 600px or less, set the background color to olive */
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+	.icon {
+		color: #cf6060;
 	}
-} */
+
+	.iconPack {
+		margin-top: 1850px;
+		margin-left: 10px;
+		margin-right: 500px;
+	}
+}

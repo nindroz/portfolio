@@ -70,13 +70,41 @@ img {
 	Body {
 		background-color: blue;
 	}
+
+	img {
+		visibility: hidden;
+	}
+
+	.title {
+		font-size: 100px;
+	}
+
+	.swoosh {
+		height: 3000px;
+		width: 1000px;
+	}
+
+	/* .title2 {
+		font-size: 80px;
+		text-align: center;
+		margin-top: 100px;
+		margin-right: 10px;
+	} */
+
+	#block {
+		position: absolute;
+		margin: 0px;
+		text-align: center;
+		font-size: 30px;
+		margin-top: 100px;
+	}
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
-	Body {
+	/* Body {
 		background-color: olive;
-	}
+	} */
 
 	img {
 		visibility: hidden;
@@ -88,6 +116,9 @@ img {
 		font-size: 80px;
 	}
 
+	.title {
+		font-size: 130px;
+	}
 	#block {
 		margin-right: 150px;
 	}
