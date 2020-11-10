@@ -25,8 +25,14 @@
 	}
 
 	.iconPack {
-		margin-top: 1850px;
-		margin-left: 10px;
+		margin-top: 1730px;
+		margin-left: -25px;
 		margin-right: 500px;
+	}
+
+	#gh {
+		position: absolute;
+		margin-left: 230px;
+		margin-top: 50px;
 	}
 }

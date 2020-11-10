@@ -116,17 +116,24 @@ img {
 		display: none;
 	}
 
+	.swoosh {
+		height: 3000px;
+		width: 1170px;
+	}
+
 	.title2 {
-		margin-top: 250px;
-		margin-right: 150px;
-		font-size: 80px;
+		margin-top: 220px;
+		margin-right: 190px;
+		font-size: 70px;
 	}
 
 	.title {
-		font-size: 130px;
+		font-size: 110px;
+		margin-left: 10px;
 	}
 	#block {
-		margin-right: 150px;
+		margin-right: 190px;
+		margin-left: 400px;
 	}
 }
 /* scroll stuff */
