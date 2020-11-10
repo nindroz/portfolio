@@ -44,9 +44,9 @@
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
 	.element {
-		width: 300px;
-		margin-right: 20px;
-		margin-left: 0px;
+		width: 75vw;
+		margin-right: 5vw;
+		margin-left: 5vw;
 		margin-top: 20px;
 	}
 }
