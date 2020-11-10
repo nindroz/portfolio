@@ -12,7 +12,7 @@ export default class Icons extends Component {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<FaGithubAlt className="icon" id="gh" />
+					<FaGithubAlt className="icon" />
 				</a>
 				<a
 					href="https://twitter.com/Nindroz3"
