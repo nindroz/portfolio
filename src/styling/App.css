@@ -11,7 +11,7 @@ Body {
 .swoosh {
 	position: absolute;
 	background-color: #242024;
-	width: 1400px;
+	width: 55vw;
 	height: 4000px;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
@@ -59,6 +59,7 @@ img {
 	position: absolute;
 	margin-left: 5%;
 	margin-top: 150px;
+	opacity: 0.85;
 }
 
 #main:active {
@@ -83,7 +84,7 @@ img {
 
 	.swoosh {
 		height: 3000px;
-		width: 975px;
+		width: 1500px;
 	}
 
 	.title2 {
@@ -135,6 +136,21 @@ img {
 	#block {
 		margin-right: 25vw;
 		margin-left: 400px;
+	}
+}
+
+@media only screen and (max-width: 1950px) and (min-width: 1024px) {
+	.swoosh {
+		height: 3000px;
+		width: 1170px;
+	}
+
+	.title2 {
+	}
+
+	.title {
+	}
+	#block {
 	}
 }
 /* scroll stuff */
