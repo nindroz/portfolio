@@ -24,7 +24,7 @@ export default class App extends Component {
 		return (
 			<div className="App">
 				<div className="swoosh"></div>
-				<Icons />
+				<Icons id="icons" />
 				<h1 className="title">
 					<span style={{ color: "white" }}>Hi I'm</span>
 					<br />

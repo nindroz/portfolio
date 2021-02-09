@@ -12,7 +12,7 @@ Body {
 	position: absolute;
 	background-color: #242024;
 	width: 55vw;
-	height: 80vw;
+	height: 150vh;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
 	z-index: -2;
@@ -41,7 +41,6 @@ Body {
 #projects {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 20%;
 	margin-top: -5%;
 }
 
@@ -63,10 +62,6 @@ Body {
 		background-color: blue;
 	}
 
-	img {
-		display: none;
-	}
-
 	.title {
 		font-size: 90px;
 		margin-left: 6vw;
@@ -74,8 +69,8 @@ Body {
 	}
 
 	.swoosh {
-		height: 3000px;
-		width: 900px;
+		height: 110vh;
+		width: 70vw;
 	}
 
 	.title2 {
@@ -93,8 +88,6 @@ Body {
 	}
 
 	#projects {
-		margin-right: 10px;
-		margin-left: 15px;
 		margin-top: -5%;
 	}
 }
@@ -105,13 +98,9 @@ Body {
 		background-color: olive;
 	}
 
-	img {
-		display: none;
-	}
-
 	.swoosh {
-		height: 3000px;
-		width: 1170px;
+		height: 110vh;
+		width: 70vw;
 	}
 
 	.title2 {
@@ -130,7 +119,7 @@ Body {
 	}
 }
 
-@media only screen and (max-width: 1950px) and (min-width: 1024px) {
+/* @media only screen and (max-width: 1950px) and (min-width: 1024px) {
 	.swoosh {
 		height: 3000px;
 		width: 1170px;
@@ -143,61 +132,4 @@ Body {
 	}
 	#block {
 	}
-}
-/* scroll stuff */
-
-/*! locomotive-scroll v3.6.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
-	overflow: hidden;
-}
-
-html.has-scroll-dragging {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.has-scroll-smooth body {
-	overflow: hidden;
-}
-
-.has-scroll-smooth [data-scroll-container] {
-	min-height: 100vh;
-}
-
-.c-scrollbar {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 11px;
-	height: 100%;
-	transform-origin: center right;
-	transition: transform 0.3s, opacity 0.3s;
-	opacity: 0;
-}
-.c-scrollbar:hover {
-	transform: scaleX(1.45);
-}
-.c-scrollbar:hover,
-.has-scroll-scrolling .c-scrollbar,
-.has-scroll-dragging .c-scrollbar {
-	opacity: 1;
-}
-
-.c-scrollbar_thumb {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: black;
-	opacity: 0.5;
-	width: 7px;
-	border-radius: 10px;
-	margin: 2px;
-	cursor: -webkit-grab;
-	cursor: grab;
-}
-.has-scroll-dragging .c-scrollbar_thumb {
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
-}
+} */
