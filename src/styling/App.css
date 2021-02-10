@@ -4,39 +4,33 @@
 	display: grid;
 }
 
-Body {
-	background-color: #33aa7c;
-}
-
-html,
 body {
 	overflow-x: hidden;
 }
 body {
 	position: relative;
+	background-color: #33aa7c;
 }
 
 .swoosh {
 	position: absolute;
 	background-color: #242024;
-	width: 55vw;
-	height: 150vh;
+	width: 75vw;
+	height: 200vh;
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
 	z-index: -2;
 }
 
 .title {
-	position: relative;
 	z-index: 1;
-	font-size: 150px;
+	font-size: 140px;
 	color: #33aa7c;
 	margin-left: 2%;
 	margin-top: 1%;
 }
 
 .title2 {
-	position: relative;
 	z-index: 1;
 	text-align: right;
 	font-size: 160px;
