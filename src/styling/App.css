@@ -8,6 +8,14 @@ Body {
 	background-color: #33aa7c;
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	position: relative;
+}
+
 .swoosh {
 	position: absolute;
 	background-color: #242024;
@@ -69,8 +77,8 @@ Body {
 	}
 
 	.swoosh {
-		height: 110vh;
-		width: 70vw;
+		height: 200vh;
+		width: 170vw;
 	}
 
 	.title2 {
