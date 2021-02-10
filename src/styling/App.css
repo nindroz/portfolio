@@ -85,6 +85,7 @@ Body {
 		margin-top: 90px;
 		margin-left: 5vw;
 		margin-right: 5vw;
+		margin-bottom: 10vh;
 	}
 
 	#projects {
@@ -99,13 +100,13 @@ Body {
 	}
 
 	.swoosh {
-		height: 110vh;
-		width: 70vw;
+		height: 150vh;
+		width: 80vw;
 	}
 
 	.title2 {
-		margin-top: 220px;
-		margin-right: 25vw;
+		margin-top: 50px;
+		margin-right: 5vw;
 		font-size: 70px;
 	}
 
@@ -114,8 +115,9 @@ Body {
 		margin-left: 10px;
 	}
 	#block {
-		margin-right: 25vw;
-		margin-left: 400px;
+		margin-left: 2vh;
+		margin-right: 5vw;
+		margin-bottom: 8vh;
 	}
 }
 
