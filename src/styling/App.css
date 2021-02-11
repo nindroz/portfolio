@@ -4,12 +4,15 @@
 	display: grid;
 }
 
+/* html,
 body {
 	overflow-x: hidden;
 	position: relative;
+} */
+
+body {
 	background-color: #33aa7c;
 }
-
 .swoosh {
 	position: absolute;
 	background-color: #242024;
@@ -27,7 +30,7 @@ body {
 	color: #33aa7c;
 	margin-left: 2%;
 	margin-top: 1%;
-	margin-right: 50vw;
+	margin-right: 30vw;
 }
 
 .title2 {
@@ -44,6 +47,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: -5%;
+	max-width: 100%;
 }
 
 #block {
@@ -104,7 +108,7 @@ body {
 
 	.title2 {
 		margin-top: 3%;
-		margin-right: 5vw;
+		margin-right: 8vw;
 		font-size: 70px;
 	}
 
@@ -113,10 +117,14 @@ body {
 		margin-left: 10px;
 	}
 	#block {
+		align-content: center;
+		text-align: center;
 		margin-top: -3vh;
-		margin-left: 2vh;
-		margin-right: 5vw;
-		margin-bottom: 8vh;
+		margin-left: 2vw;
+		margin-right: 2vh;
+		margin-bottom: 9vh;
+		padding: 5vw;
+		padding-top: 0;
 	}
 }
 
