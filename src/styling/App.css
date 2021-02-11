@@ -27,6 +27,7 @@ body {
 	color: #33aa7c;
 	margin-left: 2%;
 	margin-top: 1%;
+	margin-right: 50vw;
 }
 
 .title2 {
@@ -108,7 +109,7 @@ body {
 	}
 
 	.title {
-		font-size: 110px;
+		font-size: 120px;
 		margin-left: 10px;
 	}
 	#block {
