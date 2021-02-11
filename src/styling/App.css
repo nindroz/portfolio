@@ -4,11 +4,10 @@
 	display: grid;
 }
 
-/* html,
+html,
 body {
-	overflow-x: hidden;
-	position: relative;
-} */
+	overflow-x: hidden !important;
+}
 
 body {
 	background-color: #33aa7c;
@@ -21,7 +20,7 @@ body {
 	transform-origin: -10px -10px;
 	transform: skewX(-30deg) scaleX(1.2);
 	z-index: -2;
-	max-height: 100%;
+	max-height: 80vmax;
 }
 
 .title {
@@ -73,6 +72,7 @@ body {
 	.swoosh {
 		height: 200vh;
 		width: 170vw;
+		max-height: 100%;
 	}
 
 	.title2 {
@@ -81,12 +81,9 @@ body {
 	}
 
 	#block {
-		margin: 0px;
 		text-align: center;
 		font-size: 30px;
 		margin-top: 90px;
-		margin-left: 5vw;
-		margin-right: 5vw;
 		margin-bottom: 10vh;
 	}
 
@@ -104,6 +101,7 @@ body {
 	.swoosh {
 		height: 150vh;
 		width: 80vw;
+		max-height: 200vmax;
 	}
 
 	.title2 {
