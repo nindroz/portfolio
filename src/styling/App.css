@@ -25,7 +25,6 @@ body {
 	z-index: 1;
 	font-size: 160px;
 	color: #33aa7c;
-	mix-blend-mode: difference;
 	margin-left: 2%;
 	margin-top: 1%;
 }
@@ -56,9 +55,9 @@ body {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
-	Body {
+	/* Body {
 		background-color: blue;
-	}
+	} */
 
 	.title {
 		font-size: 90px;
@@ -93,9 +92,9 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
-	Body {
+	/* Body {
 		background-color: olive;
-	}
+	} */
 
 	.swoosh {
 		height: 150vh;
