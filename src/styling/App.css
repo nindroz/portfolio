@@ -59,9 +59,11 @@ body {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
-	/* Body {
-		background-color: blue;
-	} */
+	html,
+	Body {
+		overflow-x: hidden;
+		position: relative;
+	}
 
 	.title {
 		font-size: 90px;
@@ -72,7 +74,8 @@ body {
 	.swoosh {
 		height: 200vh;
 		width: 170vw;
-		max-height: 100%;
+		max-height: 200%;
+		overflow-x: hidden !important;
 	}
 
 	.title2 {
@@ -81,14 +84,19 @@ body {
 	}
 
 	#block {
+		float: center;
 		text-align: center;
 		font-size: 30px;
-		margin-top: 90px;
+		margin-left: auto;
+		padding: 6vw;
+		margin-right: 20%;
+		margin-top: 3vh;
 		margin-bottom: 10vh;
 	}
 
 	#projects {
-		margin-top: -5%;
+		float: left;
+		margin-top: 0;
 	}
 }
 
