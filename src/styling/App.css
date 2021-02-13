@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap");
 .App {
 	font-family: "Nunito", sans-serif;
-	display: grid;
 }
 
-html,
+/* html,
 body {
 	overflow-x: hidden !important;
-}
+} */
 
 body {
 	background-color: #33aa7c;
 }
-.swoosh {
+/* .swoosh {
 	position: absolute;
 	background-color: #242024;
 	width: 60vw;
@@ -21,6 +20,16 @@ body {
 	transform: skewX(-30deg) scaleX(1.2);
 	z-index: -2;
 	max-height: 80vmax;
+} */
+
+.swoosh {
+	position: absolute;
+	background-color: #242024;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	transform-origin: -0px -0px;
+	transform: skewY(-20deg);
 }
 
 .title {
@@ -28,17 +37,17 @@ body {
 	font-size: 160px;
 	color: #33aa7c;
 	margin-left: 2%;
-	margin-top: 1%;
+	margin-top: 0;
 	margin-right: 40vw;
 }
 
 .title2 {
 	z-index: 1;
 	text-align: right;
-	font-size: 160px;
+	font-size: 130px;
 	color: #242024;
-	margin-right: 1vw;
-	margin-top: 5%;
+	margin-right: 2vw;
+	margin-top: -6%;
 	font-weight: 700;
 }
 
@@ -52,18 +61,18 @@ body {
 #block {
 	text-align: right;
 	margin-left: 50%;
-	margin-right: 1vw;
+	margin-right: 2vw;
 	font-size: 35px;
-	margin-top: -10vh;
+	margin-top: -8vh;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
-	html,
+	/* html,
 	Body {
 		overflow-x: hidden;
 		position: relative;
-	}
+	} */
 
 	.title {
 		font-size: 90px;
@@ -72,10 +81,7 @@ body {
 	}
 
 	.swoosh {
-		height: 200vh;
-		width: 170vw;
-		max-height: 200%;
-		overflow-x: hidden !important;
+		height: 150%;
 	}
 
 	.title2 {
@@ -87,11 +93,11 @@ body {
 		float: center;
 		text-align: center;
 		font-size: 30px;
-		margin-left: auto;
-		padding: 6vw;
-		margin-right: 20%;
-		margin-top: 3vh;
-		margin-bottom: 10vh;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 5%;
+		padding: 5vh;
+		margin-bottom: 6vh;
 	}
 
 	#projects {
@@ -106,11 +112,11 @@ body {
 		background-color: olive;
 	} */
 
-	.swoosh {
+	/* .swoosh {
 		height: 150vh;
 		width: 80vw;
 		max-height: 200vmax;
-	}
+	} */
 
 	.title2 {
 		margin-top: 3%;

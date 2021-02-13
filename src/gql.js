@@ -1,4 +1,4 @@
-export const gqlQuery = (username) => {
+const gqlQuery = (username) => {
 	return `query {
 	repositoryOwner(login: "${username}") {
 	  ... on ProfileOwner {
@@ -24,7 +24,7 @@ export const gqlQuery = (username) => {
  }`;
 };
 
-export const dummyProject = {
+const dummyProject = {
 	node: {
 		url: "https://google.com",
 		name: "Google",

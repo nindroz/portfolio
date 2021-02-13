@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { endpoint, gqlQuery, dummyProject } from "./gql.js";
+import { endpoint } from "./gql.js";
 import Project from "./Project.js";
 import Icons from "./Icons.js";
 import "./styling/App.css";
-import logo from "./Assets/logot.svg";
-import circ from "./Assets/circ.svg";
 
 export default class App extends Component {
 	constructor(props) {
@@ -24,7 +22,6 @@ export default class App extends Component {
 		return (
 			<div className="App">
 				<div className="swoosh"></div>
-				<Icons id="icons" />
 				<h1 className="title">
 					<span style={{ color: "white" }}>Hi I'm</span>
 					<br />
@@ -76,6 +73,9 @@ export default class App extends Component {
 						[Nindroz#3903]
 					</span>
 				</p>
+				<footer>
+					<Icons id="icons" />
+				</footer>
 			</div>
 		);
 	}
