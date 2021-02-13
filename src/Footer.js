@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import "./styling/Icons.css";
+import "./styling/Footer.css";
 
-export default class Icons extends Component {
+export default class Footer extends Component {
 	render() {
 		return (
 			<footer>

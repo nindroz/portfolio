@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { endpoint } from "./gql.js";
 import Project from "./Project.js";
-import Icons from "./Icons.js";
+import Footer from "./Footer.js";
 import "./styling/App.css";
 
 export default class App extends Component {
@@ -73,9 +73,7 @@ export default class App extends Component {
 						[Nindroz#3903]
 					</span>
 				</p>
-				<footer>
-					<Icons id="icons" />
-				</footer>
+				<Footer />
 			</div>
 		);
 	}

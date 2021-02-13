@@ -3,24 +3,9 @@
 	font-family: "Nunito", sans-serif;
 }
 
-/* html,
-body {
-	overflow-x: hidden !important;
-} */
-
 body {
 	background-color: #33aa7c;
 }
-/* .swoosh {
-	position: absolute;
-	background-color: #242024;
-	width: 60vw;
-	height: 200vh;
-	transform-origin: -10px -10px;
-	transform: skewX(-30deg) scaleX(1.2);
-	z-index: -2;
-	max-height: 80vmax;
-} */
 
 .swoosh {
 	position: absolute;
@@ -68,12 +53,6 @@ body {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media only screen and (max-width: 600px) {
-	/* html,
-	Body {
-		overflow-x: hidden;
-		position: relative;
-	} */
-
 	.title {
 		font-size: 90px;
 		margin-left: 6vw;
@@ -108,16 +87,6 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
-	/* Body {
-		background-color: olive;
-	} */
-
-	/* .swoosh {
-		height: 150vh;
-		width: 80vw;
-		max-height: 200vmax;
-	} */
-
 	.title2 {
 		margin-top: 3%;
 		margin-right: 8vw;
@@ -140,8 +109,8 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1950px) and (min-width: 1024px) {
+/* @media only screen and (max-width: 1950px) and (min-width: 1024px) {
 	.swoosh {
 		max-height: 130vmax;
 	}
-}
+} */
