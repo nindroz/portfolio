@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import "./styling/Footer.css";
 
@@ -33,6 +33,15 @@ export default class Footer extends Component {
 							rel="noopener noreferrer"
 						>
 							<HiOutlineMail className="icon" />
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/hmantha/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedin className="icon" />
 						</a>
 					</li>
 				</ul>

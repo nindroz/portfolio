@@ -58,11 +58,12 @@ export default class App extends Component {
 					>
 						Hitesh
 					</span>
-					. Im a 15 yr old software developer and cybersecurity enthusiast that
-					loves to make things and learn pretty much anything. I'm also
-					interested in mechanical keyboards and looking for other cool hobbies!
-					Feel free to contact me to just chat or work with me on a project. The
-					best way to find me is on Discord @{" "}
+					. I'm a 16 yr old self-taught software developer and cybersecurity
+					enthusiast that loves to make things and learn pretty much anything. I
+					spend a of time working on projects and am always on the lookout for
+					cool interesting technologies to try out! Feel free to contact me to
+					just chat or work with me on a project. The best way to find me is on
+					Discord @{" "}
 					<span
 						style={{
 							background: "white",
