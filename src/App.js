@@ -45,7 +45,7 @@ export default class App extends Component {
 					ABOUT <span style={{ color: "white" }}>ME</span>
 				</h1>
 				<p id="block">
-					Hey there <span role="img">&#128075;</span> , I'm{" "}
+					{/* Hey there <span role="img">&#128075;</span> , I'm{" "} */}
 					<span
 						style={{
 							background: "white",
