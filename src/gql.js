@@ -41,7 +41,7 @@ export async function endpoint() {
 		headers: {
 			"Content-Type": "application/json",
 			Accept: "application/json",
-			Authorization: `Bearer  24464a5871453ad710749bcbe59ace775776b080`,
+			Authorization: `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`,
 		},
 		body: JSON.stringify({
 			query: gqlQuery("nindroz"),

@@ -15,7 +15,6 @@ export default class App extends Component {
 			this.setState({
 				...ret.props.projects,
 			});
-			console.log(this.state);
 		});
 	}
 	render() {
@@ -73,6 +72,21 @@ export default class App extends Component {
 					>
 						[Nindroz#3903]
 					</span>
+					<br />
+					Also, I'm currently looking for internships in the Spring and Summer
+					of 2021. Feel free to shoot me an email{" "}
+					<a
+						style={{
+							background: "white",
+							borderRadius: "5px",
+							opacity: 0.9,
+							color: "inherit",
+							textDecorationLine: "none",
+						}}
+						href="mailto:mantha.hitesh@gmail.com"
+					>
+						[here]
+					</a>
 				</p>
 				<Footer />
 			</div>
