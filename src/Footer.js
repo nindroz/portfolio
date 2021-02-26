@@ -45,7 +45,9 @@ export default class Footer extends Component {
 						</a>
 					</li>
 				</ul>
-				<small>Hitesh Mantha © 2021 | Built with React & 🖤.</small>
+				<small>
+					Hitesh Mantha © 2021 | Built with React & <span role="img">🖤</span> .
+				</small>
 			</footer>
 		);
 	}
