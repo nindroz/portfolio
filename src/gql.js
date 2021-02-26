@@ -49,7 +49,7 @@ export async function endpoint() {
 	});
 
 	const ret = await projects.json();
-	console.log(process.env);
+
 	return {
 		props: {
 			projects:
