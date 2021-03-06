@@ -46,7 +46,11 @@ export default class Footer extends Component {
 					</li>
 				</ul>
 				<small>
-					Hitesh Mantha © 2021 | Built with React <span role="img">🖤</span> .
+					Hitesh Mantha © 2021 | Built with React and
+					<span role="img" aria-label="heart">
+						&nbsp;🖤
+					</span>
+					.
 				</small>
 			</footer>
 		);
