@@ -61,10 +61,9 @@ export default class App extends Component {
 					>
 						Hitesh
 					</span>
-					. I'm a 16 yr old self-taught software developer and cybersecurity
-					enthusiast that loves to make things and learn pretty much anything. I
+					. I'm a 16 yr old maker and self-taught developer that is interested in learning anything and everything. I
 					spend a of time working on projects and am always on the lookout for
-					cool interesting technologies to try out! Feel free to contact me to
+					interesting ideas or technologies to try out! Feel free to contact me to
 					just chat or work with me on a project. The best way to find me is on
 					Discord @{" "}
 					<span
@@ -77,8 +76,7 @@ export default class App extends Component {
 						[Nindroz#3903]
 					</span>
 					<br />
-					Also, I'm currently looking for internships in the Spring and Summer
-					of 2021. Feel free to shoot me an email{" "}
+					Otherwise, feel free to shoot me an email{" "}
 					<a
 						style={{
 							background: "white",
