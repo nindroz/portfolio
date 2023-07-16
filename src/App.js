@@ -61,7 +61,7 @@ export default class App extends Component {
 					>
 						Hitesh
 					</span>
-					. I'm a 17 yr old maker and designer that is interested in learning anything and everything. I
+					. I'm an 18 yr old maker and designer that is interested in learning anything and everything. I
 					spend a of time working on projects and am always on the lookout for
 					interesting ideas or technologies to try out! Feel free to contact me to
 					just chat or work with me on a project. The best way to find me is on
